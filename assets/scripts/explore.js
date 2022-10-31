@@ -23,16 +23,9 @@ function init() {
         utterThis.voice = voices[i];
         synth.speak(utterThis);
         var result = document.querySelector("img");
-        result.src = "assets/images/smiling-open.png";
-        while(synth.speaking){
-          result.src = "assets/images/smiling-open.png";
-          synth.pause();
-        }
+        result.src = "assets/images/smiling-open.png"
       }
     }
-      synth.resume();
-      result.src = "assets/images/smiling.png"; 
-      
     inputTxt.blur(); 
   }
 }  
